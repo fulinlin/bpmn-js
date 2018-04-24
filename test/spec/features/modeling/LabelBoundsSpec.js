@@ -50,7 +50,7 @@ describe('label bounds', function() {
 
       updateLabel = function(shape, text) {
         directEditing.activate(shape);
-        directEditing._textbox.content.innerText = text;
+        directEditing._textbox.content.innerHTML = text.replace(/\n/g, '<br />');
         directEditing.complete();
       };
 
