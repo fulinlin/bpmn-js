@@ -81,6 +81,8 @@ describe('label bounds', function() {
         // when
         updateLabel(shape, 'Foo\nbar\nbaz');
 
+        console.log(shape.label.height);
+
         // then
         expect(shape.label.height).to.be.above(oldLabelHeight);
       }));
